@@ -55,8 +55,8 @@ const Game = () => {
 
 
 	function handleAction(xCoordinate, yCoordinate) {
-		if (!isInteger(xCoordinate) || !withinRange(xCoordinate, 0, 2)) { throw new Error(`${xCoordinate} - Not a valid coordinate!`); }
-		if (!isInteger(yCoordinate) || !withinRange(yCoordinate, 0, 2)) { throw new Error(`${yCoordinate} - Not a valid coordinate!`); }
+		if (!isInteger(xCoordinate) || !withinRange(xCoordinate, 0, 4)) { throw new Error(`${xCoordinate} - Not a valid coordinate!`); }
+		if (!isInteger(yCoordinate) || !withinRange(yCoordinate, 0, 4)) { throw new Error(`${yCoordinate} - Not a valid coordinate!`); }
 
 		if (!fieldIsEmpty(board, xCoordinate, yCoordinate)) { return; }
 

@@ -5,7 +5,7 @@ export function fieldIsEmpty(board, xCoordinate, yCoordinate) {
 }
 
 export function findWinner(board) {
-	for (let i=0; i<3; i++) {
+	for (let i=0; i<5; i++) {
 		// columns
 		if (board[0][i] && tripleEqual(board[0][i], board[1][i], board[2][i])) { return board[0][i]; }
 		// rows
@@ -29,8 +29,10 @@ export function hasEmptyFields(board) {
 
 export function getEmptyBoard() {
 	return [
-		[0, 0, 0],
-		[0, 0, 0],
-		[0, 0, 0],
+		[0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0],
 	];
 }
